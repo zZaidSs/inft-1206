@@ -101,6 +101,7 @@
       <h1>Mozilla</h1>
       <!-- insert <img> element, link to the small
           version of the Firefox logo -->
+          <img src="./firefox_logo-only_RGB.png" alt="Firefox Logo">
 
     </header>
 
@@ -109,7 +110,7 @@
         <!-- insert iframe from youtube -->
         <iframe width="400" height="225" src="https://www.youtube.com/embed/ojcNcvb1olg" frameborder="0" allowfullscreen></iframe>
 
-        
+
 
         <h2>Rocking the free web</h2>
 
@@ -137,7 +138,10 @@
 
       <div class="red-panda">
         <!-- insert picture element -->
-         <img src="./red-panda.jpg">
+        <picture>
+          <source media="(max-width: 600px)" srcset="redpanda600.jpg">
+          <img src="./red-panda.jpg" alt="Red Panda">
+        </picture>
       </div>
 
     </main>
