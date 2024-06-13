@@ -1,52 +1,35 @@
-/* minimal-table.css */
-
-body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
-}
-
-h1 {
-  font-size: 2em;
+html {
+  font-family: sans-serif;
 }
 
 table {
-  width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
+  border: 2px solid rgb(200,200,200);
+  letter-spacing: 1px;
+  font-size: 0.8rem;
 }
 
-caption {
-  font-size: 1.2em;
-  margin-bottom: 10px;
-  text-align: left;
+td, th {
+  border: 1px solid rgb(190,190,190);
+  padding: 10px 20px;
 }
 
-th, td {
-  border: 1px solid #ddd;
-  padding: 8px;
+th {
+  background-color: rgb(235,235,235);
+}
+
+td {
   text-align: center;
 }
 
-thead th {
-  background-color: #f2f2f2;
+tr:nth-child(even) td {
+  background-color: rgb(250,250,250);
 }
 
-tbody th[rowspan] {
-  background-color: #e0e0e0;
-  vertical-align: middle;
+tr:nth-child(odd) td {
+  background-color: rgb(245,245,245);
 }
 
-tbody th[scope="row"] {
-  background-color: #fff;
-  text-align: left;
-  vertical-align: middle;
-}
-
-tbody th {
-  border-left: 2px solid black;
-}
-
-a {
-  color: blue;
-  text-decoration: underline;
+caption {
+  padding: 10px;
 }
