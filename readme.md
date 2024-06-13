@@ -8,3 +8,4 @@
 [table timetable](/html_tables/table.html.html)
 
 [assignment_2](/assingments/assignments2/assignment_2.html)
+[assignment_2_part2](/assingments/assignments2/assignment_2_part2.html)
