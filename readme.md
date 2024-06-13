@@ -6,3 +6,5 @@
 [assignment1_Part_2](/assingments/assignments1/assingment_1_part_2.html)
 
 [table timetable](/html_tables/table.html.html)
+
+[assignment_2](/assingments/assignments2/assignment_2.html)
