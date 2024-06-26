@@ -90,3 +90,18 @@ a:focus {
 a:active {
   color: #CC3333; /* Active link color */
 }
+
+a[href*="http://"]:after {
+  content: "\0203A"; 
+  margin-left: 5px;
+  color: #336699; /* Match the regular link color */
+}
+
+ul, ol {
+  margin: 15px 0; 
+  padding: 0;
+}
+
+li {
+  line-height: 1.5; /* Match line-height with body text */
+}
