@@ -49,9 +49,22 @@ body {
   .feature {
       width: 200px;
   }
+nav {
+  display: flex; /* Enable Flexbox */
+  justify-content: space-between; /* Distribute items evenly */
+  align-items: center; /* Align vertically */
+  padding: .5em;
+  background-color: #000;
+  color: #fff;
+}
 
-  .align-right {
-    float: right;
-    margin-left: 10px; /* Adjust margin for spacing */
-  }
-  
+nav a {
+  color: inherit; /* Inherit color from nav */
+  text-decoration: none;
+  padding: .5em 1em;
+}
+
+.align-right {
+  float: right;
+  margin-left: 10px; /* Adjust margin for spacing */
+}
