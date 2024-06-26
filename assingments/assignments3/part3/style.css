@@ -105,3 +105,49 @@ ul, ol {
 li {
   line-height: 1.5; /* Match line-height with body text */
 }
+
+ul li::marker {
+  content: "•"; 
+  color: #a66; 
+  font-size: 1.2em; 
+  margin-right: 10px; /* Adjust spacing as needed */
+}
+
+/* Navigation Menu Styles */
+nav {
+  background-color: #eee; /* Light gray background */
+  border: 1px solid #ccc; /* Light gray border */
+  padding: 10px;
+  height: 100vh; /* Set height to 100% viewport height */
+  width: 20%; /* Adjust width as needed for your design */
+}
+
+nav ul {
+  list-style: none; /* Remove default bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: block; /* Makes the entire list item clickable */
+  margin: 10px 0; /* Spacing between menu items */
+  text-align: center; /* Center text within menu items */
+  width: calc(100% / number-of-menu-items); /* Adjust for # of items */
+}
+
+nav a {
+  display: block; /* Makes the entire list item clickable */
+  padding: 10px; /* Padding for menu item text */
+  color: black; /* Text color */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Bold text for emphasis (optional) */
+  transition: background-color 0.2s ease-in-out; /* Smooth transition on hover */
+}
+
+nav a:hover {
+  background-color: #ddd; /* Light gray background on hover */
+}
+
+footer {
+  clear: both; /* Clear floats after the floated elements */
+}
