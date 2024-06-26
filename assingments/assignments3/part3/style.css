@@ -65,3 +65,28 @@ h3 {
   font-size: 1.5em; 
   letter-spacing: 1px; 
 }
+p {
+  line-height: 1.5; 
+  letter-spacing: 0.5px; 
+}
+
+section p:first-child {
+  text-indent: 20px; 
+}
+
+a {
+  color: #336699; /* Regular link color */
+  text-decoration: underline;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+}
+
+a:active {
+  color: #CC3333; /* Active link color */
+}
