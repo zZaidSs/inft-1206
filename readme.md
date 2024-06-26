@@ -11,4 +11,5 @@
 [assignment_2_part2](/assingments/assignments2/assignment_2_part2.html)
 
 [assignment_3_part1](/assingments/assignments3/biog-download.html)
-[assignments_3_part2](/assingments/assignments3/part2/index.html)
+[assignment_3_part2](/assingments/assignments3/part2/index.html)
+[assignment_3_part3](/assingments/assignments3/part3/index%20(1).html)
