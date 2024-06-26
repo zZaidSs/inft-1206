@@ -1,69 +1,71 @@
 body {
-    background-color: #fff;
-    color: #333;
-    margin: 0;
-    font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
-  }
+  background-color: #fff;
+  color: #333;
+  margin: 0;
+  font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
+}
 
-  img {
-      max-width: 100%;
-      display: block;
-  }
-  
-  .logo {
-    font-size: 200%;
-    padding: 50px 20px;
-    margin: 0 auto;
-    max-width: 980px;
-  }
-  
-  .grid {
-    margin: 0 auto;
-    padding: 0 20px;
-    max-width: 980px;
-  }
-  
-  nav {
-    background-color: #000;
-    padding: .5em;
-  }
-  
-  nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: .5em 1em;
-  }
-  
-  .photos {
-    
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    float: right; /* Make photos float right */
-    margin-left: 10px; /* Add spacing between image and text (optional) */
-  }
+img {
+  max-width: 50%;
+  display: block;
+}
 
-  .feature {
-      width: 200px;
-  }
+.logo {
+  font-size: 200%;
+  padding: 50px 20px;
+  margin: 0 auto;
+  max-width: 980px;
+}
+
+.grid {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 980px;
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping if needed */
+}
+
 nav {
-  display: flex; /* Enable Flexbox */
-  justify-content: space-between; /* Distribute items evenly */
-  align-items: center; /* Align vertically */
-  padding: .5em;
   background-color: #000;
+  padding: .5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   color: #fff;
 }
 
 nav a {
-  color: inherit; /* Inherit color from nav */
+  color: inherit;
   text-decoration: none;
   padding: .5em 1em;
 }
 
+/* Optional: Sticky Navigation Bar (Positioning) */
+nav {
+  position: fixed; /* Fix to top of viewport */
+  top: 0; /* Position at top */
+  left: 0; /* Position at left */
+  width: 100%; /* Span full width */
+  z-index: 10; /* Ensure navigation stays on top */
+  /* Add logic to change background color or add a shadow when scrolled (optional) */
+}
+
+.image-wrapper {
+  width: 70%; /* Adjust as needed */
+  height: auto; /* Maintain aspect ratio */
+  clear: both; /* Ensure text wraps around the image */
+}
+
+article, aside {
+  flex: 2; /* Both elements take up equal space */
+  padding: 1em; /* Adjust padding as needed */
+}
+
+.photos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+  grid-gap: 1px; /* Gap between images */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
