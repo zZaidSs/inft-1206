@@ -12,4 +12,4 @@
 
 [assignment_3_part1](/assingments/assignments3/biog-download.html)
 [assignment_3_part2](/assingments/assignments3/part2/index.html)
-[assignment_3_part3](/assingments/assignments3/part3/index%20(1).html)
+[assignment_3_part3](/assingments/assignments3/part3/index.html)
