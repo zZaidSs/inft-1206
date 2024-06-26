@@ -1,5 +1,12 @@
+/* Sets the default font family for the entire HTML document */
 html {
   font-family: sans-serif;
 }
 
 /* Your CSS below here */
+/* Style for the cool box */
+.cool-box {
+  width: 200px; /* Reasonable width for a large box */
+  height: 200px; /* Reasonable height for a large box */
+  display: flex; /* Use flexbox to center content */
+}
