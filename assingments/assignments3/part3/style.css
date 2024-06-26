@@ -151,3 +151,6 @@ nav a:hover {
 footer {
   clear: both; /* Clear floats after the floated elements */
 }
+nav li {
+  border: 1px solid #ccc; /* Light gray border for each box */
+}
