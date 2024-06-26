@@ -41,9 +41,12 @@ body {
   }
   
   .photos {
+    
     list-style: none;
     margin: 0;
     padding: 0;
+    float: right; /* Make photos float right */
+    margin-left: 10px; /* Add spacing between image and text (optional) */
   }
 
   .feature {
@@ -64,7 +67,3 @@ nav a {
   padding: .5em 1em;
 }
 
-.align-right {
-  float: right;
-  margin-left: 10px; /* Adjust margin for spacing */
-}
