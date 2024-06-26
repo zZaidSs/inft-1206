@@ -9,4 +9,8 @@ html {
   width: 200px; /* Reasonable width for a large box */
   height: 200px; /* Reasonable height for a large box */
   display: flex; /* Use flexbox to center content */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  margin: 50px auto; /* Center the box horizontally and add some margin on top */
+
 }
