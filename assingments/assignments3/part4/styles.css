@@ -49,3 +49,9 @@ body {
   .feature {
       width: 200px;
   }
+
+  .align-right {
+    float: right;
+    margin-left: 10px; /* Adjust margin for spacing */
+  }
+  
