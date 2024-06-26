@@ -1,10 +1,13 @@
 /* General setup */
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
 
 * {
   box-sizing: border-box;
 }
 
 body {
+  font-family: 'Source Serif', serif;
   margin: 0 auto;
   min-width: 1000px;
   max-width: 1400px;
@@ -43,85 +46,6 @@ header, footer {
 }
 
 /* WRITE YOUR CODE BELOW HERE */
-/* Fonts */
-/* Font Faces */
-@font-face {
-  font-family: 'SerifFont';
-  src: url('path/to/seriffont.woff') format('woff');
-  /* Add other formats as needed */
-}
-
-@font-face {
-  font-family: 'SansSerifFont';
-  src: url('path/to/sansseriffont.woff') format('woff');
-  /* Add other formats as needed */
-}
-
-/* General Text Styling */
-body {
-  font-family: 'SerifFont', serif;
-  font-size: 10px;
-  line-height: 1.6; /* Adjust line-height as needed */
-}
-
-h1 {
-  text-align: center;
-}
-
-h2, h3, h4, h5, h6 {
-  font-family: 'SansSerifFont', sans-serif;
-  /* Define appropriate font sizes using relative units */
-  font-size: 2em; /* Example size, adjust as needed */
-  letter-spacing: 1px; /* Adjust letter-spacing for headings */
-}
-
-p {
-  letter-spacing: 0.5px; /* Adjust letter-spacing for paragraphs */
-  /* Add other text styling as needed */
-  text-indent: 20px; /* Indent paragraphs after headings */
-}
-
-/* Links */
-a {
-  color: #336699; /* Default link color */
-  text-decoration: none; /* Remove default underline */
-}
-
-a:hover,
-a:focus {
-  text-decoration: underline; /* Underline on hover/focus */
-}
-
-a:visited {
-  color: #663366; /* Visited link color */
-}
-
-a:active {
-  color: #993333; /* Active link color */
-  /* Add additional styling to differentiate active state */
-}
-
-/* Lists */
-ul, ol {
-  margin-top: 10px; /* Adjust spacing between lists */
-  margin-bottom: 10px; /* Adjust spacing between lists */
-}
-
-li {
-  line-height: 1.6; /* Match line-height with paragraphs */
-  /* Add other list item styling as needed */
-}
-
-/* External Link Icon */
-a[href^="http"]:after,
-a[href^="https"]:after {
-  content: " \2197"; /* Unicode for external link icon (arrow pointing northeast) */
-  font-size: 0.8em; /* Adjust size of the icon */
-}
-
-/* Other Specific Styling as Required */
-
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-  /* Adjustments for smaller screens */
+h1, h2, h3 {
+  font-family: 'Open Sans', sans-serif; /* Fallback for browsers without the font */
 }
