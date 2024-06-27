@@ -1,71 +1,124 @@
+/* Body Styles */
 body {
   background-color: #fff;
   color: #333;
   margin: 0;
-  font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-img {
-  max-width: 50%;
-  display: block;
-}
-
+/* Logo Styles */
 .logo {
-  font-size: 200%;
-  padding: 50px 20px;
-  margin: 0 auto;
-  max-width: 980px;
+  font-size: 2em; /* Adjust font size as needed */
+  padding: 20px 0; /* Adjust padding as needed */
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd; /* Optional bottom border */
 }
 
-.grid {
-  margin: 0 auto;
-  padding: 0 20px;
-  max-width: 980px;
-  display: flex;
-  flex-wrap: wrap; /* Allow wrapping if needed */
-}
-
+/* Navigation Styles */
 nav {
   background-color: #000;
   padding: .5em;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  color: #fff;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 nav a {
-  color: inherit;
+  color: #fff;
   text-decoration: none;
   padding: .5em 1em;
 }
 
-/* Optional: Sticky Navigation Bar (Positioning) */
-nav {
-  position: fixed; /* Fix to top of viewport */
-  top: 0; /* Position at top */
-  left: 0; /* Position at left */
-  width: 100%; /* Span full width */
-  z-index: 10; /* Ensure navigation stays on top */
-  /* Add logic to change background color or add a shadow when scrolled (optional) */
-}
-
-.image-wrapper {
-  width: 70%; /* Adjust as needed */
-  height: auto; /* Maintain aspect ratio */
-  clear: both; /* Ensure text wraps around the image */
-}
-
-article, aside {
-  flex: 2; /* Both elements take up equal space */
-  padding: 1em; /* Adjust padding as needed */
-}
-
-.photos {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
-  grid-gap: 1px; /* Gap between images */
-  list-style: none;
+nav ul {
+  display: flex; /* Enable Flexbox for horizontal layout */
+  list-style: none; /* Remove default list style */
   margin: 0;
   padding: 0;
 }
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  font-weight: bold; /* Add boldness for a similar look */
+}
+
+nav a:hover {
+  text-decoration: underline; /* Add underline on hover */
+  color: #ddd; /* Optional hover color change */
+}
+
+/* Main Content Styles */
+main.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Two columns: content (2 parts) and sidebar (1 part) */
+  grid-gap: 20px; /* Gap between content and sidebar */
+  padding: 20px;
+  margin-top: 80px; /* Space for fixed navigation bar */
+}
+
+/* Article Styles */
+article {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd; /* Optional border */
+}
+
+article h1 {
+  margin-bottom: 10px;
+}
+
+article img.feature {
+  width: 20%; /* Display image full width */
+  margin-bottom: 10px;
+  float: left;
+  margin-right: 1em;
+}
+
+article p {
+  line-height: 1.5; /* Adjust line spacing as needed */
+  margin-bottom: 10px;
+  max-width: 700px; /* Adjust as needed for content width */
+}
+
+/* Aside Styles */
+aside {
+  background-color: #eee;
+  padding: 20px;
+  border: 1px solid #ddd; /* Optional border */
+}
+
+aside h2 {
+  margin-bottom: 10px;
+}
+
+/* Photos Styles */
+.photos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns for images */
+  grid-gap: 5px; /* Gap between images */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 50%;
+}
+
+.photos img {
+  width: 100%; /* Display images full width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Additional Styles for Scrolling Effect */
+body.scrolled nav { /* Add class on scroll */
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+}
+
+
