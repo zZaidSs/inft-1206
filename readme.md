@@ -14,3 +14,6 @@
 [assignment_3_part2](/assingments/assignments3/part2/index.html)
 [assignment_3_part3](/assingments/assignments3/part3/index.html)
 [assignment_3_part4](/assingments/assignments3/part4/index.html)
+
+
+[assignment_4_part1](/assingments/assignments4/index.html)
