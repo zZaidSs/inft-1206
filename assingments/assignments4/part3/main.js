@@ -33,3 +33,15 @@ class Ball {
     ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
     ctx.fill();
   }
+  update() {
+    // Bounce off the walls
+    if ((this.x + this.size) >= width || (this.x - this.size) <= 0) {
+      this.velX = -this.velX;
+    }
+    if ((this.y + this.size) >= height || (this.y - this.size) <= 0) {
+      this.velY = -this.velY;
+    }
+
+    this.x += this.velX;
+    this.y += this.velY;
+  }
