@@ -1,3 +1,11 @@
+/**
+ * Name: Muhammad zaid siddiqui
+File: filename.html
+Date: 09/08/2024
+assignment-4 image gallery
+
+ */
+
 // setup canvas
 
 const canvas = document.querySelector("canvas");
@@ -77,3 +85,22 @@ while (balls.length < 25) {
 
   balls.push(ball);
 }
+// Animation loop
+function loop() {
+  // Clear the canvas with a semi-transparent black color
+  ctx.fillStyle = "rgba(0, 0, 0, 0.25)";
+  ctx.fillRect(0, 0, width, height);
+
+  // Update and draw each ball
+  for (const ball of balls) {
+    ball.draw();
+    ball.update();
+    ball.collisionDetect();
+  }
+
+  // Request the next frame
+  requestAnimationFrame(loop);
+}
+
+// Start the animation
+loop();
