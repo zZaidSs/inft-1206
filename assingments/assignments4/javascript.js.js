@@ -23,5 +23,13 @@ function generateRandomStory() {
 
         // Generate random index for story
         const story = stories[Math.floor(Math.random() * stories.length)];
+
+        // Replace placeholders with actual values
+        const finalStory = story
+          .replace(/{name}/g, storyComponents.name)
+          .replace(/{location}/g, storyComponents.location)
+          .replace(/{action}/g, storyComponents.action)
+          .replace(/{weight}/g, storyComponents.weight)
+          .replace(/{temperature}/g, storyComponents.temperature);
     }
 
