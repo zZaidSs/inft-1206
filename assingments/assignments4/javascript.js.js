@@ -31,5 +31,27 @@ function generateRandomStory() {
           .replace(/{action}/g, storyComponents.action)
           .replace(/{weight}/g, storyComponents.weight)
           .replace(/{temperature}/g, storyComponents.temperature);
-    }
 
+        // Display the story
+        const storyElement = document.querySelector(".story");
+        storyElement.innerText = finalStory;
+        storyElement.style.visibility = 'visible';
+      }
+
+      // Utility function to get a random element from an array
+      function getRandomElement(arr) {
+        return arr[Math.floor(Math.random() * arr.length)];
+      }
+
+      // Function to convert Fahrenheit to Celsius
+      function convertToCelsius(fahrenheit) {
+        return ((fahrenheit - 32) * 5 / 9).toFixed(1);
+      }
+
+      // Function to convert pounds to stones
+      function convertToStones(pounds) {
+        return (pounds / 14).toFixed(1);
+      }
+
+      // Add event listener to the button
+      document.querySelector(".randomize").addEventListener("click", generateRandomStory);
