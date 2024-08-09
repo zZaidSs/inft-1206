@@ -1,3 +1,13 @@
+/**
+ * Name: Muhammad zaid siddiqui
+File: filename.html
+Date: 09/08/2024
+assignment-4 generating a random story
+
+ */
+
+
+
 function generateRandomStory() {
         // Define stories with placeholders for dynamic values
         const stories = [
