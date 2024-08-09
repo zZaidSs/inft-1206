@@ -37,4 +37,16 @@ document.addEventListener('DOMContentLoaded', () => {
       displayedImage.setAttribute('src', `images/${filename}`);
       displayedImage.setAttribute('alt', altTexts[filename]);
     });
-  }); }
+  });
+
+  // Selects the button element
+  const btn = document.querySelector('button');
+  
+  // Selects the overlay element
+  const overlay = document.querySelector('.overlay');
+
+  // Add an event listener to the button for click events
+  btn.addEventListener('click', () => {
+    // Get the current class of the button (either 'dark' or 'light')
+    const currentClass = btn.getAttribute('class');
+    
