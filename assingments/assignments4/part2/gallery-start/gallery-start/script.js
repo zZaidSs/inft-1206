@@ -1,3 +1,12 @@
+/**
+ * Name: Muhammad zaid siddiqui
+File: filename.html
+Date: 09/08/2024
+assignment-4 image gallery
+
+ */
+
+
 // Waits for the DOM to fully load before running the script
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -50,3 +59,16 @@ document.addEventListener('DOMContentLoaded', () => {
     // Get the current class of the button (either 'dark' or 'light')
     const currentClass = btn.getAttribute('class');
     
+    // If the button has the 'dark' class, switch to 'light' mode
+    if (currentClass === 'dark') {
+      btn.setAttribute('class', 'light');
+      btn.textContent = 'Lighten';
+      overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.5)'; // Darken the overlay
+    } else {
+      // If the button has the 'light' class, switch to 'dark' mode
+      btn.setAttribute('class', 'dark');
+      btn.textContent = 'Darken';
+      overlay.style.backgroundColor = 'rgba(0, 0, 0, 0)'; // Remove the dark overlay
+    }
+  });
+});
