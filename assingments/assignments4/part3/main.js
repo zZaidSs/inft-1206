@@ -2,7 +2,7 @@
  * Name: Muhammad zaid siddiqui
 File: filename.html
 Date: 09/08/2024
-assignment-4 image gallery
+assignment-4 ball bounce
 
  */
 
