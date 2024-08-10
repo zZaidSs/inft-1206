@@ -19,3 +19,4 @@
 [assignment_4_part1](/assingments/assignments4/index.html)
 [assignment_4_part2](/assingments/assignments4/part2/gallery-start/gallery-start/index.html)
 [assignment_4_part3](/assingments/assignments4/part3/index.html)
+[assignment_4_part4](/assingments/assignments4/part4/index-finished.html)
